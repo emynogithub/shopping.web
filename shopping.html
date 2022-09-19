@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>shopping website</title>
+    <style>
+        img{
+            width:150;
+            height:170px;
+        }
+        *{
+            padding: ;
+            margin:;
+        }
+        #shops h4{
+            text-transform: uppercase;
+            margin-top: 0;
+
+        }
+        #shops h3{
+            font-weight:normal;
+
+        }
+        .articlewrap{
+            display:flex;
+            flex-flow:column wrap;
+            gap:1rem
+        }
+
+        .articlewrap article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:repeat(5,auto);
+            gap:1rem 1rem;
+            
+            background-color: antiquewhite;
+        }
+        .articlewrap article *{
+            grid-column:2/3;
+            margin-top:0;
+            margin-bottom: 0;
+            bo;
+        }
+        .articlewrap article img{
+            grid-column:1/2;
+            grid-row:1/6;
+            padding:1.5rem 0.3rem;
+        }
+        @media(min-width:630px){
+           .articlewrap{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            
+           }
+           .articlewrap p{
+            min-width: 150px;
+           }
+        }
+        @media(min-width:1000px){
+            .articlewrap{
+                grid-template-columns: repeat(4,minmax(300px,1fr));
+            } 
+            .articlewrap article {
+                grid-template-columns:1fr;
+                grid-template-rows: repeat(5,auto);
+                padding:1rem;
+            }
+            .articlewrap article *{
+                grid-column: 1/2;
+                margin:0;
+                
+            }
+            .articlewrap article .fa{
+                padding: 0;
+            }
+            .articlewrap article img{
+                grid-row: auto;
+            }
+            .articlewrap .middle{
+                grid-column: 2/span 2;
+            }
+            .articlewrap .middle img{
+                width:550px;
+                height: 270px;
+            }
+            .articlewrap .end{
+                grid-row: span 2; 
+            }
+            .articlewrap .iphone8{
+                grid-column: ;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<!-----section part--------->
+ <section id="shops">
+  <h2>fairly used phones</h2>
+<div class="articlewrap">
+  <article>
+<h3>Apple product</h3>
+<h4>iphone 13</h4>
+<img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-midnight-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315913" alt="">
+<p>iphone 13 has alot of features compared to the other iphone product </p>
+<p><a href="#">visit here</a></p>
+<p><i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    
+</p>
+</article>
+
+
+<article class="middle">
+    <h3>Apple product</h3>
+    <h4>iphone 12pro</h4>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_lT5OOjRyV4s5HaMiJ6oniZtCIjm6aS8vDmbAhqkDuuaiPnRoeypvLTlZos8CF_XZjM&usqp=CAU" alt="">
+    <p>iphone 12pro has alot of features compared to the other iphone product </p>
+    <p><a href="#">visit here</a></p>
+    <p><i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        
+    </p>
+    
+    </article>
+
+
+    <article class="end">
+        <h3>Apple product</h3>
+        <h4>iphone 12</h4>
+        <img src="https://itronics.in/wp-content/uploads/2020/10/iphone12-black.png" alt="">
+        <p>iphone 12 has alot of features compared to the other iphone product </p>
+        <p><a href="#">visit here</a></p>
+        <p><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            
+        </p>
+        </article>
+
+        <article>
+            <h3>Apple product</h3>
+            <h4>iphone xr</h4>
+            <img src="https://i.insider.com/5d239842a17d6c5ded37c362?width=1136&format=jpeg" alt="">
+            <p>iphone xr has alot of features compared to the other iphone product </p>
+            <p><a href="#">visit here</a></p>
+            <p><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                
+            </p>
+            
+            </article>
+
+            <article>
+                <h3>Apple product</h3>
+                <h4>iphone xxmas</h4>
+                <img src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-xs-max-space-gray.png?v=5" alt="">
+                <p>iphone xxmas has alot of features compared to the other iphone product </p>
+                <p><a href="#">visit here</a></p>
+                <p><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    
+                </p>
+                     
+                </article>
+         
+                <article class="iphone8">
+                    <h3>Apple product</h3>
+                    <h4>iphone 8</h4>
+                    <img src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-8-plus-space-gray.png?v=5" alt="">
+                    <p>iphone 8 has alot of features compared to the other iphone product </p>
+                    <p><a href="#">visit here</a></p>
+                    <p><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </p>
+                    
+                     
+                    </article>
+
+</div>
+
+
+
+
+ </section>
+</body>
+</html>
